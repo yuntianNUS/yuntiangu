@@ -5,18 +5,8 @@ import 'rsuite/dist/rsuite.min.css';
 import NavToggle from './navbar';
 import YunTianContent from './Aboutme';
 
-const headerStyles = {
-  padding: 18,
-  fontSize: 16,
-  height: 56,
-  background: '#34c3ff',
-  color: ' #fff',
-  whiteSpace: 'nowrap',
-  overflow: 'hidden'
-};
-
 function App() {
-  const [expand, setExpand] = React.useState(true);
+  // const [expand, setExpand] = React.useState(true);
 
   return (
     <div className="show-fake-browser sidebar-page">
