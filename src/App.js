@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import { Container, Sidebar, Sidenav, Content, Navbar, Nav, Divider, Placeholder, Footer, FlexboxGrid } from 'rsuite';
 import './App.css';
+import 'rsuite/dist/rsuite.min.css';
+import NavToggle from './navbar';
+import YunTianContent from './Aboutme';
+
+const headerStyles = {
+  padding: 18,
+  fontSize: 16,
+  height: 56,
+  background: '#34c3ff',
+  color: ' #fff',
+  whiteSpace: 'nowrap',
+  overflow: 'hidden'
+};
 
 function App() {
+  const [expand, setExpand] = React.useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="show-fake-browser sidebar-page">
+      <Container>
+        
+        <FlexboxGrid>
+          <FlexboxGrid.Item colspan={3}></FlexboxGrid.Item>
+          <FlexboxGrid.Item colspan={18}><Container>
+            <YunTianContent></YunTianContent>
+          </Container></FlexboxGrid.Item>
+          <FlexboxGrid.Item colspan={3}></FlexboxGrid.Item>
+        </FlexboxGrid>
+
+      </Container>
+      <Footer><Divider></Divider></Footer>
     </div>
   );
 }
 
 export default App;
+/*{/* <Sidebar
+          style={{ display: 'flex', flexDirection: 'column' }}
+          width={expand ? 260 : 56}
+          collapsible
+        >
+          <NavToggle expand={expand} onChange={() => setExpand(!expand)} />
+        </Sidebar> */
