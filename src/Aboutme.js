@@ -1,7 +1,7 @@
-import { Container, Header, Sidebar, Sidenav, Content, Navbar, Nav, Divider, Placeholder, PanelGroup } from 'rsuite';
+import { Container, Header, Content, Divider, PanelGroup } from 'rsuite';
 
-import { Panel, Stack, ButtonGroup, Button } from 'rsuite';
-import { CopyBlock, CodeBlock, dracula } from "react-code-blocks";
+import { Panel } from 'rsuite';
+import { CopyBlock, dracula } from "react-code-blocks";
 import IconRow from './ContactIcons';
 import './mycontents.css'
 
@@ -12,8 +12,8 @@ const code =
     "lastname:": "gu",
     "birth_year": "1998",
     "姓名"："谷云天",
-    "languages": ['Java', 'Python', 'JavaScript', 'TypeScript', 'R', 'SAS', 'SQL', 'GraphQL', 'HTML', 'CSS'],
-    "frameworks": ['Angular', 'React', 'Vue', 'Redux', 'Django', 'Apache NetBeans', 'Snowflake'],
+    "speaks": ['Java', 'Python', 'JavaScript', 'TypeScript', 'R', 'SAS', 'SQL', 'GraphQL', 'HTML', 'CSS'],
+    "uses": ['Angular', 'React', 'Vue', 'Redux', 'Django', 'Apache NetBeans', 'Snowflake'],
     "good_at": ["googling"],
     "best_friends": ['jon', 'stackoverflow', 'sheila'], #in no particular order
     "favourite_team": "Chelsea_FC",
@@ -21,8 +21,8 @@ const code =
     "fav_show": "better_call_saul",
     "fav_music_genre": "hip-hop",
     "fav_artist": "eminem",
-    "fav_breakfast": ["kopi-o kosong ice", "kaya_toast"],
-    "dislikes": ["hackerrank", "soft_boiled_eggs", "not_getting_hired"],
+    "buy_me": ["kopi-o kosong_ice"],
+    "dislikes": ["soft_boiled_eggs", "pumpkin"],
 }`
 
 
@@ -32,8 +32,8 @@ function YunTianContent() {
             <Header >
                 <code className={"headerCode"} style={{ textAlign: "center" }}>hello there, yuntian here</code>
                 <span className={"cursorBlinkHeader"}>|</span>
-                <IconRow/>
-                <Divider/>
+                <IconRow />
+                <Divider />
                 <div
                     style={{
                         fontFamily: 'monospace',
@@ -53,12 +53,47 @@ function YunTianContent() {
             <Divider><code style={{ textAlign: "center", fontSize: "2em" }}>about me</code>
                 <span className={"cursorBlink"} style={{ fontSize: "2em" }}>|</span></Divider>
 
-            <Content>i am studying information systems in nus school of computing, graduating in may 2023. i like finance. i like to code. i am currently watching house of the dragon.</Content>
+            <Content>
+                nus information systems. 6/6/23. thank you for browsing this page. this has been a sick joke of a season for chelsea fc.
+                12th place finish.
+                money mase is gone.
+                havertz is gone.
+                frank came in, casted expelliarmus on potter.
+                then casted avada kedavra on the club. rip.
+                pochettino. sounds like ham.
+                end of an era.
+                here's my shoutout to umar. congratulations on your marriage my brother.
+                <br></br>
+                recently been golfing w elizabeth (eli) and daryl dickson (daryl) it's been really fun. sewyyyy suiiiiii.
+                mi novia sheila is going to london for a fancy 'hello world' conference and for her side quest she is going to visit
+                stamford bridge. lovely. and shes going wembly to listen to spotify? interesting.
+                <br></br>
+                closing remarks: hit the gym and stay hard.
 
-            <Divider><code style={{ textAlign: "center", fontSize: "2em" }}>work experience</code>
+            </Content>
+
+            <Divider><code style={{ textAlign: "center", fontSize: "2em" }}>cpf contributors</code>
                 <span className={"cursorBlink"} style={{ fontSize: "2em", animation: "blink 0.79s steps(100, start) infinite" }}>|</span></Divider>
 
             <PanelGroup bordered>
+                <Panel
+                    defaultExpanded
+                    bordered
+                    header={
+                        <div>
+                            <span>HSBC, Graduate Analyst </span>
+                            <span>[July 2023 - ]</span>
+                        </div>
+                    }
+                >
+                    <li>
+                        GOT HIRED!!!! LFGGGGGGG!!!!!!!!!!!!!!!!!!!!
+                    </li>
+                    <li>
+                        SUIIIIIIIIIIIIIIIIIIIIIIIIIIII
+                    </li>
+
+                </Panel>
                 <Panel
                     defaultExpanded
                     bordered
@@ -113,7 +148,7 @@ function YunTianContent() {
                     bordered
                     header={
                         <div>
-                            <span>GAO Capital (Hedge Fund), Operations Intern</span>
+                            <span>GAO Capital (Hedge Fund), Operations Intern </span>
                             <span>[Jan 2021 - Mar 2021]</span>
                         </div>
                     }

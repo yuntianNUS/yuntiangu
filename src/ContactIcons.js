@@ -1,11 +1,8 @@
 import { Icon } from '@rsuite/icons';
-import { Grid, Row, Col } from 'rsuite';
 import { IconButton, ButtonToolbar, ButtonGroup } from 'rsuite';
 import * as faEnvelope from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import * as faLinkedin from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import * as faGithub from '@fortawesome/free-brands-svg-icons/faGithub';
-import * as faReact from '@fortawesome/free-brands-svg-icons/faReact';
-import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 
 const FaSvgIcon = ({ faIcon, ...rest }) => {
     const { width, height, svgPathData } = faIcon;

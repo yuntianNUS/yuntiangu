@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import { Container, Sidebar, Sidenav, Content, Navbar, Nav, Divider, Placeholder, Footer, FlexboxGrid } from 'rsuite';
+import React from 'react'
+import { Container, Divider, Footer, FlexboxGrid } from 'rsuite';
 import './App.css';
 import 'rsuite/dist/rsuite.min.css';
-import NavToggle from './navbar';
 import YunTianContent from './Aboutme';
 
 function App() {
@@ -27,10 +26,3 @@ function App() {
 }
 
 export default App;
-/*{/* <Sidebar
-          style={{ display: 'flex', flexDirection: 'column' }}
-          width={expand ? 260 : 56}
-          collapsible
-        >
-          <NavToggle expand={expand} onChange={() => setExpand(!expand)} />
-        </Sidebar> */
