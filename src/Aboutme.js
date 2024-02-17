@@ -186,7 +186,18 @@ function YunTianContent() {
                     }
                 >
                     <li>
-                        Lead development of data collection engine using gpt + kor for organized data collection.
+                        Lead development of data ingestion engine using gpt for organized data extraction from the WWW to generate
+                        reliable and comprehensive coverage of all upcoming, present and past crypto projects. Coinseeker.co now stands to
+                        be the leading 'golden source' of crypto business knowledge base.
+                    </li>
+                    <li>
+                        Formulated solution to consistently extract organized data from unorganized sources through developing tried and tested
+                        prompts for the tuned LLM to perform Question Answering with accuracy of 90% for key data fields.
+                    </li>
+                    <li>
+                        Enhanced data ingestion process by adding secondary layers of data quality checks and outlier identification 
+                        for LLM's Question Answering evaluations, 
+                        reducing previous implementation of manual data extraction + processing by 95%.
                     </li>
 
                 </Panel>
