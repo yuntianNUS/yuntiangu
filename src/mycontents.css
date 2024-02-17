@@ -37,11 +37,11 @@ a:visited {
 
 .cursorBlinkHeader {
     font-weight: 100;
-    font-size: 5em; 
+    font-size: 2.5em; 
     color: grey;
     width: 1px;
-    overflow: hidden;
-    animation: blink 0.76s steps(100, start) infinite
+    /* overflow: hidden; */
+    animation: blink 0.76s steps(100, start) infinite;
 }
 
 @keyframes blink {

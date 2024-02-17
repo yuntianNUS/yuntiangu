@@ -28,11 +28,11 @@ const clickGit = () => {
 function IconRow() {
 
     return (
-        <ButtonToolbar>
+        <ButtonToolbar style={{display: 'inline-flex', margin: 3}}>
             <ButtonGroup>
                 <IconButton onClick={clickLinkedin} icon={<Icon as={FaSvgIcon} faIcon={faLinkedin} />} />
                 <IconButton onClick={clickGit} icon={<Icon as={FaSvgIcon} faIcon={faGithub} />} />
-                <a href="mailto:yuntiangu@gmail.com">
+                <a href="mailto:yuntiangu+frommywebsite@gmail.com">
                     <IconButton icon={<Icon as={FaSvgIcon} faIcon={faEnvelope} />} />
                 </a>
             </ButtonGroup>

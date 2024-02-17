@@ -2,7 +2,7 @@ import { Container, Header, Content, Divider, PanelGroup } from 'rsuite';
 
 import { Panel } from 'rsuite';
 import { CopyBlock, dracula } from "react-code-blocks";
-import IconRow from './ContactIcons';
+// import IconRow from './ContactIcons';
 import './mycontents.css'
 
 // eslint-disable-next-line no-undef
@@ -10,20 +10,21 @@ const code =
     `details = {
     "firstname": "yuntian",
     "lastname:": "gu",
-    "birth_year": "1998",
     "姓名": "谷云天",
-    "favourite_team": "Chelsea_FC",
-    "does": ['fullstack dev'],
+    "favourite_team": "Chelsea_FC", #KTBFFH
+    "does": ["fullstack dev", "eat chicken"],
 }`
 
 
 function YunTianContent() {
     return (
         <Container>
-            <Header >
-                <code className={"headerCode"} style={{ textAlign: "center" }}>hello there, yuntian here</code>
-                <span className={"cursorBlinkHeader"}>|</span>
-                <IconRow />
+            <Header>
+                <div style={{justifyContent: 'stretch', marginTop: '1em'}}>
+                    <code className={"headerCode"} style={{ fontSize: 38 }}>hello there, yuntian here</code>
+                    <span className={"cursorBlinkHeader"}>|</span>
+                    {/* <IconRow /> */}
+                </div>
                 <Divider />
                 <div
                     style={{
@@ -66,7 +67,7 @@ function YunTianContent() {
                         <>
                             <div style={{ display: "flex", justifyContent: "space-between" }}>
                                 <div>
-                                    <span>HSBC, Global Graduate, Analyst, Full Time, first real big boy job, paying taxes </span>
+                                    <span>HSBC, Global Graduate, Analyst, Full Time, first real big boy job to get the debts and taxes paid </span>
                                 </div>
                                 <div>
                                     <span>[July 2023 - today]</span>
@@ -76,13 +77,13 @@ function YunTianContent() {
                     }
                 >
                     <li>
-                        online trading team.
+                        online trading team
                     </li>
                     <li>
                         equities, derivatives
                     </li>
                     <li>
-                        fullstack dev. agile-ing.
+                        fullstack development
                     </li>
 
                 </Panel>
@@ -195,8 +196,8 @@ function YunTianContent() {
                         prompts for the tuned LLM to perform Question Answering with accuracy of 90% for key data fields.
                     </li>
                     <li>
-                        Enhanced data ingestion process by adding secondary layers of data quality checks and outlier identification 
-                        for LLM's Question Answering evaluations, 
+                        Enhanced data ingestion process by adding secondary layers of data quality checks and outlier identification
+                        for LLM's Question Answering evaluations,
                         reducing previous implementation of manual data extraction + processing by 95%.
                     </li>
 
