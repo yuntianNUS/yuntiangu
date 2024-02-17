@@ -11,18 +11,9 @@ const code =
     "firstname": "yuntian",
     "lastname:": "gu",
     "birth_year": "1998",
-    "姓名"："谷云天",
-    "speaks": ['Java', 'Python', 'JavaScript', 'TypeScript', 'R', 'SAS', 'SQL', 'GraphQL', 'HTML', 'CSS'],
-    "uses": ['Angular', 'React', 'Vue', 'Redux', 'Django', 'Apache NetBeans', 'Snowflake'],
-    "good_at": ["googling"],
-    "best_friends": ['jon', 'stackoverflow', 'sheila'], #in no particular order
+    "姓名": "谷云天",
     "favourite_team": "Chelsea_FC",
-    "favourite_golf_club": "7_iron",
-    "fav_show": "better_call_saul",
-    "fav_music_genre": "hip-hop",
-    "fav_artist": "eminem",
-    "buy_me": ["kopi-o kosong_ice"],
-    "dislikes": ["soft_boiled_eggs", "pumpkin"],
+    "does": ['fullstack dev'],
 }`
 
 
@@ -54,25 +45,17 @@ function YunTianContent() {
                 <span className={"cursorBlink"} style={{ fontSize: "2em" }}>|</span></Divider>
 
             <Content>
-                nus information systems. 6/6/23. thank you for browsing this page. this has been a sick joke of a season for chelsea fc.
-                12th place finish.
-                money mase is gone.
-                havertz is gone.
-                frank came in, casted expelliarmus on potter.
-                then casted avada kedavra on the club. rip.
-                pochettino. sounds like ham.
-                end of an era.
-                here's my shoutout to umar. congratulations on your marriage my brother.
+                nus information systems. graduated 06/06/23.
                 <br></br>
-                recently been golfing w elizabeth (eli) and daryl dickson (daryl) it's been really fun. sewyyyy suiiiiii.
-                mi novia sheila is going to london for a fancy 'hello world' conference and for her side quest she is going to visit
-                stamford bridge. lovely. and shes going wembly to listen to spotify? interesting.
+                code &#8594; soccer &#8594; gym&#8594; sleep&#8594; EAT
                 <br></br>
-                closing remarks: hit the gym and stay hard.
+                call me a veterinarian cause i fix bugs.
+                <br />
+                call me a god cause i create them.
 
             </Content>
 
-            <Divider><code style={{ textAlign: "center", fontSize: "2em" }}>cpf contributors</code>
+            <Divider><code style={{ textAlign: "center", fontSize: "2em" }}>jobs</code>
                 <span className={"cursorBlink"} style={{ fontSize: "2em", animation: "blink 0.79s steps(100, start) infinite" }}>|</span></Divider>
 
             <PanelGroup bordered>
@@ -80,17 +63,26 @@ function YunTianContent() {
                     defaultExpanded
                     bordered
                     header={
-                        <div>
-                            <span>HSBC, Graduate Analyst </span>
-                            <span>[July 2023 - ]</span>
-                        </div>
+                        <>
+                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                <div>
+                                    <span>HSBC, Global Graduate, Analyst, Full Time, first real big boy job, paying taxes </span>
+                                </div>
+                                <div>
+                                    <span>[July 2023 - today]</span>
+                                </div>
+                            </div>
+                        </>
                     }
                 >
                     <li>
-                        GOT HIRED!!!! LFGGGGGGG!!!!!!!!!!!!!!!!!!!!
+                        online trading team.
                     </li>
                     <li>
-                        SUIIIIIIIIIIIIIIIIIIIIIIIIIIII
+                        equities, derivatives
+                    </li>
+                    <li>
+                        fullstack dev. agile-ing.
                     </li>
 
                 </Panel>
@@ -98,10 +90,16 @@ function YunTianContent() {
                     defaultExpanded
                     bordered
                     header={
-                        <div>
-                            <span>GIC, Investment Insights Group, Quantitative Strategist Intern </span>
-                            <span>[Jan 2022 - July 2022]</span>
-                        </div>
+                        <>
+                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                <div>
+                                    <span>GIC, Investment Insights Group, Quantitative Strategist Intern </span>
+                                </div>
+                                <div>
+                                    <span>[Jan 2022 - July 2022]</span>
+                                </div>
+                            </div>
+                        </>
                     }
                 >
                     <li>
@@ -123,11 +121,15 @@ function YunTianContent() {
                 <Panel
                     bordered
                     header={
-                        <div>
-                            <span>Noyce Labs (Hedge Fund), Quantitative Strategist Intern</span>
-                            &nbsp;
-                            <span>[Mar 2021 - Dec 2021]</span>
-                        </div>
+                        <>
+                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                <div>
+                                    <span>Noyce Labs (Hedge Fund), Quantitative Strategist Intern</span>                                </div>
+                                <div>
+                                    <span>[Mar 2021 - Dec 2021]</span>
+                                </div>
+                            </div>
+                        </>
                     }
                     defaultExpanded
                 >
@@ -146,13 +148,18 @@ function YunTianContent() {
                 </Panel>
                 <Panel
                     bordered
-                    header={
-                        <div>
-                            <span>GAO Capital (Hedge Fund), Operations Intern </span>
-                            <span>[Jan 2021 - Mar 2021]</span>
-                        </div>
-                    }
                     defaultExpanded
+                    header={
+                        <>
+                            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                <div>
+                                    <span>GAO Capital (Hedge Fund), Operations Intern </span>                               </div>
+                                <div>
+                                    <span>[Jan 2021 - Mar 2021]</span>
+                                </div>
+                            </div>
+                        </>
+                    }
                 >
                     <li>
                         Built systems in Python and JavaScript to process 10,000+ daily trade statements from multiple brokers into the central database
@@ -168,6 +175,21 @@ function YunTianContent() {
                 <span className={"cursorBlink"} style={{ fontSize: "2em", animation: "blink 0.68s steps(100, start) infinite" }}>|</span></Divider>
 
             <PanelGroup bordered>
+                <Panel
+                    bordered
+                    header={
+                        <div>
+                            <span>Coinseeker.co: LLM solution development</span>
+                            &nbsp;
+                            <a href="https://app.coinseeker.co/all-projects?tab=newly-detected"><u>link</u></a>
+                        </div>
+                    }
+                >
+                    <li>
+                        Lead development of data collection engine using gpt + kor for organized data collection.
+                    </li>
+
+                </Panel>
                 <Panel
                     defaultExpanded
                     bordered
@@ -204,10 +226,10 @@ function YunTianContent() {
                     </li>
                     <li>
                         Frontend systems includes data visualization of low-to-high levels of each welfare organization’s needs, child and caretaker digital
-                        assessment tools which reduced employees’ workload by 90%.
+                        assessment tools which reduced employees' workload by 90%.
                     </li>
                 </Panel>
-                <Panel
+                {/* <Panel
                     bordered
                     header={
                         <div>
@@ -225,8 +247,8 @@ function YunTianContent() {
                         Built features include QR code scanning and processing capabilities to purchase merchant issued vouchers and points reward system
                         credited to consumer based on merchant end logic.
                     </li>
-                </Panel>
-                <Panel
+                </Panel> */}
+                {/* <Panel
                     bordered
                     header={
                         <div>
@@ -244,7 +266,7 @@ function YunTianContent() {
                         Built features of data visualization of sales, customizing available food options by the merchants, purchasing food by the customers,
                         and automatic sending delivery instructions to the drivers.
                     </li>
-                </Panel>
+                </Panel> */}
             </PanelGroup>
         </Container>
     )
